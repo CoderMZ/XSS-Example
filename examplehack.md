@@ -1,0 +1,1 @@
+<script>var help = "I was hacked"; console.log(help);</script>
