@@ -10,12 +10,11 @@
 	<div class="guestbook-list">
 		<?php foreach ($entries as $entry) {?>
 			<div class="guestbook-entry">
-				<h3><?= $entry['name'] ?></h3>
-				<div><?= $entry['message'] ?></div>
+				<h3><?php echo htmlspecialchars($entry['name']) ?></h3>
+				<div><?php echo htmlspecialchars($entry['message']) ?></div>
 			</div>
 		<?php } ?>
 	</div>
-
 
 	<form action="add" method="POST">
 
